@@ -1,0 +1,32 @@
+{
+  "name": "spec-mode",
+  "version": "1.0.0",
+  "description": "An AI skill that creates standardized specification documents before implementation. Specs first, code second.",
+  "main": "SKILL.md",
+  "keywords": [
+    "skill",
+    "ai",
+    "opencode",
+    "cursor",
+    "windsurf",
+    "copilot",
+    "specification",
+    "spec",
+    "documentation",
+    "development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlacierXiaowei/spec-mode.git"
+  },
+  "author": {
+    "name": "Glacier Xiaowei",
+    "email": "glacier_xiaowei@163.com",
+    "url": "https://github.com/GlacierXiaowei"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GlacierXiaowei/spec-mode/issues"
+  },
+  "homepage": "https://github.com/GlacierXiaowei/spec-mode#readme"
+}
