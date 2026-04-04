@@ -31,8 +31,13 @@ Spec Mode creates three standardized documents before starting any complex devel
 | ❌ Scope creep during implementation | ✅ Defined scope before coding starts |
 
 ## Installation
+### Option 1: Localskill Installation(Recommend)
 
-### Option 1: Install via npm
+```bash
+localskills install KmQZgC5M2z
+```
+
+### Option 2: Install via npm
 
 ```bash
 # Download and extract npm package
@@ -43,7 +48,7 @@ tar -xzf spec-mode-1.0.0.tgz
 cp -r package ~/.config/opencode/skills/spec-mode
 ```
 
-### Option 2: Install via GitHub
+### Option 3: Install via GitHub
 When running `npx skills add GlacierXiaowei/spec-mode --skill spec-mode`:
 
 1. You'll see a list of AI agents
@@ -58,17 +63,13 @@ When running `npx skills add GlacierXiaowei/spec-mode --skill spec-mode`:
 npx skills add GlacierXiaowei/spec-mode --skill spec-mode
 ```
 
-### Option 3: Manual Installation
+### Option 4: Manual Installation
 
 1. Clone or download this repository
 2. Copy the skill folder to your AI assistant's skills directory
 3. Restart your AI assistant
 
-### Option 4: Localskill Installation
 
-```bash
-localskills.sh/s/KmQZgC5M2z
-```
 ## Usage
 
 Trigger Spec Mode by saying any of these phrases:
