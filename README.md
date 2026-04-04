@@ -44,6 +44,15 @@ cp -r package ~/.config/opencode/skills/spec-mode
 ```
 
 ### Option 2: Install via GitHub
+When running `npx skills add GlacierXiaowei/spec-mode --skill spec-mode`:
+
+1. You'll see a list of AI agents
+2. Use `↑↓` to navigate, `Space` to select/deselect
+3. **Select only OpenCode** (or your preferred agent)
+4. Press `Enter` to confirm
+
+> **Tip:** Press `Space` first to deselect all, then select only OpenCode.
+
 
 ```bash
 npx skills add GlacierXiaowei/spec-mode --skill spec-mode
