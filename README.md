@@ -48,7 +48,7 @@ tar -xzf spec-mode-1.0.0.tgz
 cp -r package ~/.config/opencode/skills/spec-mode
 ```
 
-### Option 3: Install via GitHub
+### Option 3: Install via npx
 When running `npx skills add GlacierXiaowei/spec-mode --skill spec-mode`:
 
 1. You'll see a list of AI agents
