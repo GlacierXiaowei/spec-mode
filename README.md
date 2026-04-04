@@ -64,6 +64,11 @@ npx skills add GlacierXiaowei/spec-mode --skill spec-mode
 2. Copy the skill folder to your AI assistant's skills directory
 3. Restart your AI assistant
 
+### Option 4: Localskill Installation
+
+```bash
+localskills install spec-mode
+```
 ## Usage
 
 Trigger Spec Mode by saying any of these phrases:
