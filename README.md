@@ -67,7 +67,7 @@ npx skills add GlacierXiaowei/spec-mode --skill spec-mode
 ### Option 4: Localskill Installation
 
 ```bash
-localskills install spec-mode
+localskills.sh/s/KmQZgC5M2z
 ```
 ## Usage
 
