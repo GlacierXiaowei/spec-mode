@@ -29,17 +29,32 @@ mkdir -p "$SKILLS_DIR"
 # Get the script's directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Copy skill files to skills directory
-echo "📁 Copying skill files to $SKILLS_DIR/spec-mode/"
+# Destination directory
+DEST_DIR="$SKILLS_DIR/spec-mode"
 
 # Remove existing installation if present
-if [ -d "$SKILLS_DIR/spec-mode" ]; then
+if [ -d "$DEST_DIR" ]; then
   echo "⚠️  Removing existing installation..."
-  rm -rf "$SKILLS_DIR/spec-mode"
+  rm -rf "$DEST_DIR"
 fi
 
-# Copy files
-cp -r "$SCRIPT_DIR" "$SKILLS_DIR/spec-mode"
+# Create destination directory
+mkdir -p "$DEST_DIR"
+
+# Copy skill files (excluding .git and other unnecessary files)
+echo "📁 Copying skill files to $DEST_DIR/"
+
+# Copy core files
+cp "$SCRIPT_DIR/SKILL.md" "$DEST_DIR/"
+cp "$SCRIPT_DIR/README.md" "$DEST_DIR/" 2>/dev/null || true
+cp "$SCRIPT_DIR/LICENSE" "$DEST_DIR/" 2>/dev/null || true
+
+# Copy directories
+for dir in examples prompts references templates tests; do
+  if [ -d "$SCRIPT_DIR/$dir" ]; then
+    cp -r "$SCRIPT_DIR/$dir" "$DEST_DIR/"
+  fi
+done
 
 # Verify installation
 if [ -f "$SKILLS_DIR/spec-mode/SKILL.md" ]; then
