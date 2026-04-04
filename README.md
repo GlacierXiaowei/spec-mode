@@ -35,7 +35,12 @@ Spec Mode creates three standardized documents before starting any complex devel
 ### Option 1: Install via npm
 
 ```bash
-npx skills add spec-mode --skill spec-mode
+# Download and extract npm package
+npm pack spec-mode
+tar -xzf spec-mode-1.0.0.tgz
+
+# Copy to skills directory (Please find the installation location of the skill for your CLI platform by yourself.)
+cp -r package ~/.config/opencode/skills/spec-mode
 ```
 
 ### Option 2: Install via GitHub
