@@ -19,6 +19,35 @@ Thumbs.db
 *.swp
 *.swo
 
+# AI Skills (installed by npx skills add)
+.agents/
+.claude/
+.codebuddy/
+.commandcode/
+.continue/
+.crush/
+.factory/
+.goose/
+.junie/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.pi/
+.pochi/
+.qoder/
+.roo/
+.trae/
+.windsurf/
+.zencoder/
+skills/
+skills-lock.json
+
+# npm package downloads
+*.tgz
+
 # Temporary files
 tmp/
 temp/
